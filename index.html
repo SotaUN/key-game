@@ -6,8 +6,23 @@
         <link rel = "stylesheet" href = "main.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script>
-            function aclick(){
-                window.location.href = 'other.html';
+            var level = 1;
+            function check(){
+                if(level == 1){
+                    if(document.getElementById("KEY").value == "唐揚げ"){
+                        document.getElementById("subbutton").innerHTML = "正解";
+                        document.getElementById("subbutton").className = "submit-correct";
+                        document.getElementById("KEY").readOnly = true;
+                    }
+                    else{
+                        document.getElementById("subbutton").innerHTML = "不正解";
+                        document.getElementById("subbutton").className = "submit-wrong";
+                    }
+                }
+            }
+            function inputclick(){
+                document.getElementById("subbutton").className = "submit";
+                document.getElementById("subbutton").innerHTML = "送信";
             }
         </script>
     </head>
@@ -17,9 +32,14 @@
         <!--<h2 onclick="aclick()">はじめまして。</h2>-->
 
         <h2>はじめまして。最初の謎だ。</h2>
+        <div id = "question">
+            
+        </div>
         <div class="cp_iptxt">
             <label class="ef">
-            <input type="text" placeholder="KEY">
+            <input type="text" id = "KEY" placeholder="KEY" style="display:inline" oninput="inputclick()">
+            
+            <a class = "submit" onclick="check()" id = "subbutton">送信</a>
             </label>
         </div>
 	</body>
