@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+
+html{
+    /*background-color: blue;*/
+    background-image: url('https://img.kb-cdn.com/imgviewer/NVpIM2ptOHhYRzVmUk5rM1NrNlFxYVV6enV4aGk2UFRJMmxPckdDUUVNYWpSNU1KZkJRNk9NamdXNzVUOU5Ub3EvMnFuODFqR2EvNVJUcWZBTG5HQkZMWkFsR0k1R3FMb1hrVzB5WlRtMU5sMHh6em9IQVl5YWdONmxUVVUxVlFENTRjWGgzOElwSVlqbjZEV0NzcU8rVVFWZlVRbkpkbW5taGNqeDZOOGNTckVlTzY2d0M3K3I4OVI2OStpVHd6R3poclhJbUN1WmtLeW0raWxQS3o3Wlg4dk0yV0JsZ2pLRWZKZkZRdkRzUT0=?square=0');
+    background-size: cover;
+	filter: brightness(100%);
+	text-align: center;
+    /*filter: blur(2px);*/
+}
+h1{
+    font-family: 'DotGothic16', sans-serif;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+}
+
+.cp_iptxt {
+	position: relative;
+	width: 20%;
+	margin-left: auto;
+    margin-right: auto;
+}
+.cp_iptxt input[type='text'] {
+	font-family: 'DotGothic16', sans-serif;
+	font-size: 24px;
+	/*font: 15px/24px sans-serif;*/
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: skyblue;
+	border: none;
+	border-bottom: 2px solid white;
+	background: transparent;
+}
+.ef input[type='text']:focus {
+	border-bottom: 2px solid orangered;
+	outline: none;
+}
+input::placeholder{
+	color:gray;
+}
