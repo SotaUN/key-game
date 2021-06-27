@@ -15,9 +15,7 @@ h1{
     font-size: 90px;
 }
 h2{
-	color:white;
 	font-size: 30px;
-	font-family: 'DotGothic16', sans-serif;
 }
 
 .cp_iptxt {
@@ -25,7 +23,7 @@ h2{
 	width: 20%;
 	bottom: -10px;
 	margin-left: auto;
-    margin-right: auto;
+	margin-right: auto;
 }
 .cp_iptxt input[type='text'] {
 	font-family: 'DotGothic16', sans-serif;
@@ -36,15 +34,59 @@ h2{
 	padding: 0.3em;
 	transition: 0.3s;
 	letter-spacing: 1px;
-	color: skyblue;
+	color: white;
 	border: none;
 	border-bottom: 2px solid white;
 	background: transparent;
 }
 .ef input[type='text']:focus {
-	border-bottom: 2px solid orangered;
+	border-bottom: 2px solid yellow;
 	outline: none;
 }
 input::placeholder{
 	color:gray;
 }
+
+
+.submit {
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: #67c5ff;
+	border: solid 2px #67c5ff;
+	border-radius: 3px;
+	transition: .4s;
+  }
+  
+.submit:hover {
+	background: #67c5ff;
+	color: white;
+  }
+
+.submit-wrong{
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: red;
+	border: solid 2px red;
+	border-radius: 3px;
+	transition: .4s;
+}
+.submit-wrong:hover {
+	background: red;
+	color: white;
+  }
+
+  .submit-correct{
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	color: greenyellow;
+	border: solid 2px greenyellow;
+	border-radius: 3px;
+	transition: .4s;
+}
+.submit-correct:hover {
+	background: greenyellow;
+	color: white;
+  }
